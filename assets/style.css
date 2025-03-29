@@ -7,8 +7,10 @@
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	font-family: helvetica, -apple-system, BlinkMacSystemFont, arial, sans-serif;
 	transition: background 500ms ease;
+	background: dodgerblue;
+	color: whitesmoke;
 }
 
 p, li {
@@ -33,6 +35,10 @@ ul, ol {
 img {
 	max-width: 100%;
 	height:  auto;
+}
+
+.cursive {
+    font-family: cursive;
 }
 
 /* uncomment the code below to set the grid */
