@@ -1,0 +1,270 @@
+body {
+  background: #cccccc;
+}
+
+#align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#stage {
+  width: 900px;
+  height: 556px;
+  margin: auto;
+  background: linear-gradient(to top, #29a386, #dff6ff);
+  position: relative;
+}
+
+
+#table {
+  width: 550px;
+  height: 90px;
+  background: #3e1370;
+  position: absolute;
+  top: 370px;
+  left: 170px;
+  transform: perspective(600px) rotateX(30deg);
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.6), 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*#doll {
+  position: absolute;
+  top: 190px; /* 사진에서의 위치 */
+  left: 320px; /* 사진에서의 위치 */
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 60% 40%, #f9d648, #f4b931);
+  border-radius: 50%;
+  z-index: 3;
+}*/
+
+/* 귀 */
+.ear {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at 40% 40%, #f9d648, #f4b931);
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  z-index: 2;
+}
+.ear.left {
+  left: -10px;
+}
+.ear.right {
+  right: -10px;
+}
+
+
+
+
+#water-cup {
+  width: 80px;
+  height: 140px;
+  background: linear-gradient(to top, #d2f0ff, #ffffff);
+  border: 2px solid #c0e0f0;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  top: 285px; /* 사진에서의 위치 */
+  left: 280px; /* 사진에서의 위치 */
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.5), 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+#water-level {
+  width: 70px;
+  height: 80px;
+  background: linear-gradient(to top, #fc9cff, #dff6ff);
+  position: absolute;
+  top: 342px;
+  left: 287px;
+  border-radius: 0 0 20px 20px;
+  z-index: 2;
+}
+
+#water-lid {
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: 270px; /* 위치 조정 */
+  left: 282px; /* 위치 조정 */
+  background: linear-gradient(to top, #ffffff, #ffffff);
+  border-radius: 50%;
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.6),;
+  z-index: 2;
+}
+
+
+
+/* 라면 */
+#ramen {
+  width: 150px;
+  height: 170px;
+  position: absolute;
+  top: 240px; /* 사진에서의 위치 */
+  left: 450px; /* 사진에서의 위치 */
+  background: linear-gradient(to bottom, #ffb347, #e85c33);
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+  border-radius: 0 0 20px 20px;
+  box-shadow: inset 0 -8px 10px rgba(0,0,0,0.2), 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 4;
+}
+
+#ramen-bottom {
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  top: 390px; /* 위치 조정 */
+  left: 480px; /* 위치 조정 */
+  background: radial-gradient(circle at 50% 50%, #e85c33, #b84326);
+  border-radius: 50%;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+#ramen-lid {
+  width: 154px;
+  height: 40px;
+  position: absolute;
+  top: 220px; /* 위치 조정 */
+  left: 448px; /* 위치 조정 */
+  background: linear-gradient(to bottom, #f2f2f2, #dcdcdc);
+  border-radius: 50%;
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+
+
+
+/* 젓가락 */
+#chopstick1, #chopstick2 {
+  width: 10px;
+  height: 100px;
+  background: linear-gradient(to right, #d3a46f, #8c6239);
+  position: absolute;
+  top: 185px;
+  z-index: 6;
+  border-radius: 2px;
+  box-shadow: inset 0 -2px 2px rgba(0,0,0,0.1), 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+#chopstick1 {
+  left: 500px; /* 사진에서의 위치 */
+  transform: rotate(230deg) scaleY(1) scaleX(1.1);
+}
+
+#chopstick2 {
+  left: 510px; /* 사진에서의 위치 */
+  transform: rotate(230deg) scaleY(1) scaleX(1.1);
+}
+
+
+
+
+/* 포카리 */
+#pocari-sweat {
+  width: 86px;
+  height: 260px;
+  position: absolute;
+  top: 145px; /* 위치 조정 */
+  left: 390px; /* 위치 조정 */
+  background: linear-gradient(to bottom, #99a0ff, #131dab);
+  border-radius: 28px;
+/*  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2), 0 4px 10px rgba(0, 0, 0, 0.2);*/
+  z-index: 1;
+}
+
+#pocari-sweat-lid {
+  width: 86px;
+  height: 20px;
+  background: linear-gradient(to bottom, #e0e0e0, #dcdce0);
+  top: 145px;
+  left: 390px;
+  position: absolute;
+  border-radius: 30% 30% 30% 30%;
+  box-shadow: inset 0 2px 4px 2px rgba(255, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+/*#pocari-sweat-bottom {
+  width: 86px;
+  height: 20px;
+  background: linear-gradient(to top, #1b1f74, #3b5dc0);
+  top: 365px;
+  left: 215px;
+  position: absolute;
+  border-radius: 0 0 50% 50%;
+  box-shadow: inset 0 -2px 4px rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}*/
+
+/*#pocari-sweat-label {
+  width: 76px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 200px;
+  left: 220px;
+  border-radius: 10px;
+  z-index: 3;
+}*/
+
+
+/*----------------------------------------*/
+
+
+
+
+
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+/*#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;*/
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/

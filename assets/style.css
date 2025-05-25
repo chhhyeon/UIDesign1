@@ -1,13 +1,24 @@
+@font-face {
+  font-family: "terminal-grotesque";
+  src: url("fonts/terminal-grotesque-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
 	margin:  0px;
 	padding:  0px;
 	box-sizing: border-box;
 }
 
+#left-column {
+	padding: 20px;
+}
+
 /* adjusting fonts */
 
 body {
-	font-family: helvetica, -apple-system, BlinkMacSystemFont, arial, sans-serif;
+	font-family: 'terminal-grotesque', helvetica, -apple-system, BlinkMacSystemFont, arial, sans-serif;
 	transition: background 500ms ease;
 	background: dodgerblue;
 	color: whitesmoke;
@@ -17,14 +28,31 @@ p, li {
 	font-size:  22px;
 	line-height: 30px;
 }
-
 /* adjusting spacing */
 
-#left-column {
-	padding: 20px;
+
+h1 {
+	font-family: 'terminal-grotesque';
+	margin-top:  10px;
+	margin-bottom:  20px;
+	font-size: 30px;
 }
 
-h1, p {
+h1:hover {
+	animation: bounceUpDown 0.3s 3;
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+
+p {
 	margin-bottom:  20px;
 }
 
@@ -36,6 +64,20 @@ img {
 	max-width: 100%;
 	height:  auto;
 }
+
+
+a, a:visited {
+  transition: all 500ms ease;
+  text-decoration: none;
+  color: darkblue;
+}
+
+a:hover {
+  color: lightblue;
+  text-decoration: wavy underline;
+  text-shadow: 0px 0px 1px greenyellow;
+}
+
 
 .cursive {
     font-family: cursive;
