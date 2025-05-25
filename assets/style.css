@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "terminal-grotesque";
-  src: url("fonts/terminal-grotesque-webfont.ttf") format('truetype');
+  font-family: "GapSansBold";
+  src: url("fonts/GapSansBold.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,7 +18,7 @@
 /* adjusting fonts */
 
 body {
-	font-family: 'terminal-grotesque', helvetica, -apple-system, BlinkMacSystemFont, arial, sans-serif;
+	font-family: 'GapSansBold', helvetica, -apple-system, BlinkMacSystemFont, arial, sans-serif;
 	transition: background 500ms ease;
 	background: dodgerblue;
 	color: whitesmoke;
@@ -32,10 +32,11 @@ p, li {
 
 
 h1 {
-	font-family: 'terminal-grotesque';
+	font-family: 'GapSansBold';
+	letter-spacing: 0.05em;
+	font-size: 26px;
 	margin-top:  10px;
 	margin-bottom:  20px;
-	font-size: 30px;
 }
 
 h1:hover {
