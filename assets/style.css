@@ -24,6 +24,10 @@ body {
 	color: whitesmoke;
 }
 
+body.dark {
+  background: #333;
+}
+
 p, li {
 	font-size:  22px;
 	line-height: 30px;
