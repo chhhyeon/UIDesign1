@@ -7,4 +7,12 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  gap: 20px;   
+}
+
+#align img {
+  max-height: 100%;        /* 이미지가 화면 높이를 넘지 않도록 */
+  height: 70vh;           /* 정확히 화면 높이에 맞추고 싶을 때 */
+  width: auto;   
+  object-fit: contain;     /* 이미지 비율 유지 (선택) */
 }
